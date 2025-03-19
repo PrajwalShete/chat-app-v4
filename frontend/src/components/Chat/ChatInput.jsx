@@ -75,7 +75,6 @@ const ChatInput = ({ onSendMessage, chatId }) => {
         clearTimeout(typingTimeout);
       }
 
-      // Set new timeout
       const timeout = setTimeout(() => {
         try {
           const socket = getSocket();
